@@ -23,9 +23,9 @@
 	</ul>
 </details>
 
-RAM having come down in price makes prevalence of dbs that are designed around usage of memory. It's also 25x faster than SSD's.
+### RAM having come down in price makes prevalence of dbs that are designed around usage of memory. It's also 25x faster than SSD's.
 
-Operations depending heavily on memory include:
+### Operations depending heavily on memory include:
 
 <details>
   <summary>Click here for the solution</summary>
@@ -38,7 +38,7 @@ Operations depending heavily on memory include:
 	</ul>
 </details>
 
-MongoDB uses CPU for:
+### MongoDB uses CPU for:
 
 <details>
   <summary>Click here for the solution</summary>
@@ -48,7 +48,7 @@ MongoDB uses CPU for:
 	</ul>
 </details>
 
-MongoDB uses CPU for:
+### MongoDB uses CPU for:
 
 <details>
   <summary>Click here for the solution</summary>
@@ -58,9 +58,9 @@ MongoDB uses CPU for:
 	</ul>
 </details>
 
-By default, MongoDB will try to use all available cores to respond to incoming requests.
+### By default, MongoDB will try to use all available cores to respond to incoming requests.
 
-MongoDB RAID Consideratons - Preferred RAID - Non-preferred RAID:
+### MongoDB RAID Consideratons - Preferred RAID - Non-preferred RAID:
 
 <details>
   <summary>Click here for the solution</summary>
@@ -71,7 +71,7 @@ MongoDB RAID Consideratons - Preferred RAID - Non-preferred RAID:
 	</ul>
 </details>
 
-Networking performance considerations:
+### Networking performance considerations:
 
 <details>
   <summary>Click here for the solution</summary>
