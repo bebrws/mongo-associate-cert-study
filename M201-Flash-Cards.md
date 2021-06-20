@@ -1,6 +1,6 @@
 # Problem
 
-Operations requiring availability of CPU cycles:
+_Operations requiring availability of CPU cycles:_
 
 <details>
   <summary>Click here for the solution</summary>
@@ -12,7 +12,7 @@ Operations requiring availability of CPU cycles:
 	</ul>
 </details>
 
-Main resources MongoDB relies on to operate:
+\*Main resources MongoDB relies on to operate:
 
 <details>
   <summary>Click here for the solution</summary>
@@ -23,9 +23,9 @@ Main resources MongoDB relies on to operate:
 	</ul>
 </details>
 
-RAM having come down in price makes prevalence of dbs that are designed around usage of memory. It's also 25x faster than SSD's.
+_RAM having come down in price makes prevalence of dbs that are designed around usage of memory. It's also 25x faster than SSD's._
 
-Operations depending heavily on memory include:
+_Operations depending heavily on memory include:_
 
 <details>
   <summary>Click here for the solution</summary>
@@ -38,7 +38,7 @@ Operations depending heavily on memory include:
 	</ul>
 </details>
 
-MongoDB uses CPU for:
+_MongoDB uses CPU for:_
 
 <details>
   <summary>Click here for the solution</summary>
@@ -48,7 +48,7 @@ MongoDB uses CPU for:
 	</ul>
 </details>
 
-MongoDB uses CPU for:
+_MongoDB uses CPU for:_
 
 <details>
   <summary>Click here for the solution</summary>
@@ -58,9 +58,9 @@ MongoDB uses CPU for:
 	</ul>
 </details>
 
-By default, MongoDB will try to use all available cores to respond to incoming requests.
+_By default, MongoDB will try to use all available cores to respond to incoming requests._
 
-MongoDB RAID Consideratons - Preferred RAID - Non-preferred RAID:
+_MongoDB RAID Consideratons - Preferred RAID - Non-preferred RAID:_
 
 <details>
   <summary>Click here for the solution</summary>
@@ -71,7 +71,7 @@ MongoDB RAID Consideratons - Preferred RAID - Non-preferred RAID:
 	</ul>
 </details>
 
-Networking performance considerations:
+_Networking performance considerations:_
 
 <details>
   <summary>Click here for the solution</summary>
