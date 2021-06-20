@@ -1,5 +1,3 @@
-# Problem
-
 ### Operations requiring availability of CPU cycles:
 
 <details>
@@ -82,4 +80,40 @@
         <li>How far apart cluster nodes are (across different data centers or regions)</li>
         <li>Types of connections between data centers (i.e. latency - can't go faster than speed of light)</li>
 	</ul>
+</details>
+
+### IOPS
+
+<details>
+  <summary>Click here for the solution</summary>
+    <ul>
+      <li>Input/Output operations per second provided by server. The faster this is, the faster mongo can read/write data. Type of disk will greatly affect MongoDB performance.</li>
+    </ul>
+</details>
+
+### High availability achieved with
+
+<details>
+  <summary>Click here for the solution</summary>
+    <ul>
+      <li>replica cluster sets</li>
+    </ul>
+</details>
+
+### Horizontal scaling achieved with
+
+<details>
+  <summary>Click here for the solution</summary>
+    <ul>
+      <li>sharding cluster</li>
+    </ul>
+</details>
+
+### Collection Scan
+
+<details>
+  <summary>Click here for the solution</summary>
+    <ul>
+      <li>If not using an index when querying collection, db will have to examine every document</li>
+    </ul>
 </details>
