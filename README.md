@@ -1434,3 +1434,44 @@ Oplog stores high-level transactions that modify the database (queries are not s
 Journal on the other hand can be switched on/off on any node (master or slave), and is a low-level log of an operation for the purpose of crash recovery and durability of a single mongo instance. You can read low-level op like 'write these bytes to this file at this position'.
 
 NOTE: Starting in MongoDB 4.0, you cannot turn journaling off for replica set members that use the WiredTiger storage engine
+
+https://docs.mongodb.com/manual/reference/replica-configuration/
+
+Replica Set Configuration
+
+version and term
+
+version
+Type: int
+
+An incrementing number used to distinguish revisions of the replica set configuration document from previous iterations of the configuration.
+
+Changed in version 4.4: Replica set members use term and version to achieve consensus on the "newest" replica configuration. When members compare replica configuration documents, the configuration document with a larger term is considered the "newest". If term is the same or absent, the configuration document with the larger version is considered "newest".
+
+term
+Type: int
+
+New in version 4.4.
+
+Only available with featureCompatibilityVersion (fCV) "4.4" or later.
+
+An incrementing number used to distinguish revisions of the replica set configuration document from previous iterations of the configuration. The term of a configuration document matches the term of the replica set primary which performed the reconfiguration. The primary increments its term each time it steps up after winning an election. The primary ignores the term field if set explicitly in the replSetReconfig operation.
+
+Issuing a force reconfiguration removes the term field. When the primary next issues replSetReconfig without force, it sets the term to its own term.
+
+Replica set members use term and version to achieve consensus on the "newest" replica configuration. When members compare replica configuration documents, the configuration document with a larger term is considered the "newest". If term is the same or absent, the configuration document with the larger version is considered "newest".
+
+Change Stream Aggregation Pipeline
+
+https://docs.mongodb.com/manual/changeStreams/
+
+You can control change stream output by providing an array of one or more of the following pipeline stages when configuring the change stream:
+
+$addFields
+$match
+$project
+$replaceRoot
+$replaceWith (Available starting in MongoDB 4.2)
+$redact
+$set (Available starting in MongoDB 4.2)
+$unset (Available starting in MongoDB 4.2)
