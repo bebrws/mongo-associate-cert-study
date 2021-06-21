@@ -1428,3 +1428,9 @@
         <li>If you have a few documents with fields that grow very very large you can create a new collection, move that information to documents in those collections and reference them</li>
       </ul>
   </details>
+
+Oplog stores high-level transactions that modify the database (queries are not stored for example), like insert this document, update that, etc. Oplog is kept on the master and slaves will periodically poll the master to get newly performed operations (since the last poll). Operations sometimes get transformed before being stored in the oplog so that they are idempotent (and can be safely applied many times).
+
+Journal on the other hand can be switched on/off on any node (master or slave), and is a low-level log of an operation for the purpose of crash recovery and durability of a single mongo instance. You can read low-level op like 'write these bytes to this file at this position'.
+
+NOTE: Starting in MongoDB 4.0, you cannot turn journaling off for replica set members that use the WiredTiger storage engine
